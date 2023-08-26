@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="shortcut icon" href="../img/favicon.ico" />
+    <title>Getting started - Lambda Documentaion</title>
+    <link rel="stylesheet" href="../css/theme.css" />
+    <link rel="stylesheet" href="../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+        <link href="../style.css" rel="stylesheet" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Getting started";
+        var mkdocs_page_input_path = "getting_started.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href=".." class="icon icon-home"> Lambda Documentaion
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="..">Home</a>
+                </li>
+              </ul>
+              <ul class="current">
+                <li class="toctree-l1 current"><a class="reference internal current" href="./">Getting started</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#installation">Installation</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#first-look">First look</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#basic-concept">Basic concept</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#make-your-first-basic-flow">Make your first basic flow</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#create-two-constant-node">create two constant node</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#create-an-add-node">create an add node</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#connect-one-constant-node-to-first-pin-and-connect-another-one-to-second-pin">connect one constant node to first pin and connect another one to second pin</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#create-an-label-node-and-connect-it-to-output-of-the-add-node">create an label node and connect it to output of the add node</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#shortcuts">shortcuts</a>
+    </li>
+    </ul>
+                </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="..">Lambda Documentaion</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href=".." class="icon icon-home" aria-label="Docs"></a> &raquo;</li>
+      <li class="breadcrumb-item active">Getting started</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="getting-started">Getting started</h1>
+<p>in this page you will learn how to use lambda!</p>
+<h2 id="installation">Installation</h2>
+<p>first go to https://github.com/arshavirmirzakhani/lambda and download latest version lambda from releases tab</p>
+<h2 id="first-look">First look</h2>
+<p>when you open lambda you should see somthing like this :</p>
+<p><img alt="" src="../first_look.png" /></p>
+<ul>
+<li>on left you see the nodes tab , you can create nodes by clicking the buttons</li>
+<li>on right you see the editor , this is where you use nodes</li>
+</ul>
+<h2 id="basic-concept">Basic concept</h2>
+<p>lets create our first flow that gets two number as input and adds them then shows the result
+to do that first click on "Constant" button to create a Constant node</p>
+<p><img alt="" src="../create_constant.png" /></p>
+<p>now you should see the constant node on editor</p>
+<p><img alt="" src="../constant_node.png" /></p>
+<p>in lambda each node represent an operation. nodes can be connected to each other from ports using links , for example you can connect a constant node to an label node like the image below :</p>
+<p><img alt="" src="../connection_example.png" /></p>
+<p>when an node output port connect to another node input port , the value of input will be set to value of the output.</p>
+<h2 id="make-your-first-basic-flow">Make your first basic flow</h2>
+<p>now lets make a flow that adds two number and show the result</p>
+<p>here are the steps with explanation :</p>
+<h3 id="create-two-constant-node">create two constant node</h3>
+<p>constant node are used to output numerical values</p>
+<h3 id="create-an-add-node">create an add node</h3>
+<p>this node is used two add two values</p>
+<h3 id="connect-one-constant-node-to-first-pin-and-connect-another-one-to-second-pin">connect one constant node to first pin and connect another one to second pin</h3>
+<p>now we created a flow that adds two number now lets output the value</p>
+<h3 id="create-an-label-node-and-connect-it-to-output-of-the-add-node">create an label node and connect it to output of the add node</h3>
+<p>label node id used to see output of nodes</p>
+<p>now you should see somthing like this :</p>
+<p><img alt="" src="../first_flow.png" /></p>
+<h2 id="shortcuts">shortcuts</h2>
+<p>here some short cuts in lambda :</p>
+<p><kbd>C</kbd> copy nodes</p>
+<p><kbd>V</kbd> paste nodes</p>
+<p><kbd>Del</kbd> delete nodes/links</p>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href=".." class="btn btn-neutral float-left" title="Home"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href=".." style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+  </span>
+</div>
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "..";</script>
+    <script src="../js/theme_extra.js"></script>
+    <script src="../js/theme.js"></script>
+      <script src="../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>
