@@ -1,0 +1,7 @@
+site_name: Lambda Documentaion
+nav:
+  - Home: index.md
+  - Getting started: getting_started.md
+theme: readthedocs
+extra_css:
+  - style.css
